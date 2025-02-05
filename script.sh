@@ -1,9 +1,9 @@
 #!/bin/bash
 
-_controllerIP_="10.43.73.191"
+_controllerIP_="x.x.x.x"
 _controllerRESTAPIPort_="10443"
 _neuvectorUsername_="admin"
-_neuvectorPassword_="admin"
+_neuvectorPassword_="x.x.x.x"
 
 usage () {
     echo "Usage: `basename $0` (on|off) [controller|enforcer]"
