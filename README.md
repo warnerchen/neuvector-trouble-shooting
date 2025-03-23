@@ -1,20 +1,20 @@
 # Disable NeuVector nvprotect
 
-NeuVector 有一个名为 nvprotect 的内部保护机制，用于限制用户对 NeuVector pod 的访问权限。
+NeuVector has an internal protection mechanism called nvprotect, which restricts user access to NeuVector pods.
 
-如果需要关闭，可以通过接口进行关闭，此处提供脚本，支持关闭 Controller、Scanner、Enforcer 的 nvprotect。
+If you need to disable it, you can do so via the API. This script is provided to support disabling nvprotect for the Controller, Scanner, and Enforcer.
 
-使用方法：
+Usage:
 
 ```bash
 git clone https://github.com/warnerchen/disable-nvprotect.git
 cd disable-nvprotect
 chmod +x script.sh
 
-# 关闭 nvprotect
-# 关闭 enforcer 即可同时关闭 scanner 的 nvprotect
+# Disable nvprotect
+# Disabling the Enforcer will also disable the Scanner's nvprotect.
 ./script.sh off controller|enforcer
 
-# 开启 nvprotect
+# Enable nvprotect
 ./script.sh on controller|enforcer
 ```
