@@ -58,7 +58,7 @@ for comp in $COMPONENTS; do
     COMPONENT_NAME="${comp%%::*}"
     COMPONENT_ID="${comp##*::}"
     
-    echo "Setting nvprotect to $1 on $COMPONENT_NAME..."
+    echo "Setting nvprotect to $1 --> $COMPONENT_NAME..."
     curl -ks --location --request PATCH "https://${_controllerIP_}:${_controllerRESTAPIPort_}/v1/$2/${COMPONENT_ID}" \
         "${curlHeaders[@]}" --data "{\"config\": {\"disable_nvprotect\": $DISABLE_NVPROTECT}}"
 done
