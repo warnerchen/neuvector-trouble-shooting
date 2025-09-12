@@ -5,7 +5,7 @@
 _controllerIP_="x.x.x.x"
 _controllerRESTAPIPort_="10443"
 _neuvectorUsername_="admin"
-_neuvectorPassword_="admin"
+_neuvectorPassword_="xxx"
 _neuvectorNamespace_="neuvector"
 
 usage () {
