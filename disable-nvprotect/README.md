@@ -9,8 +9,8 @@ Usage:
 ```bash
 # Disable nvprotect
 # Disabling the Enforcer will also disable the Scanner's nvprotect.
-./disable-nvprotest.sh off controller|enforcer
+./disable-nvprotect.sh off controller|enforcer
 
 # Enable nvprotect
-./disable-nvprotest.sh on controller|enforcer
+./disable-nvprotect.sh on controller|enforcer
 ```
